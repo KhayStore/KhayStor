@@ -46,9 +46,9 @@ const lolkey = '0b0ffba94f2b803b88721e4f'
 
 hargalimit = "100"
 limitawal = "20"
-namabot = "AnisaChan🎋(Helga)"
-namaowner = "Helga Ilham`"
-nomerowner = '6282138919347'
+namabot = "SasaChan🎋(K h A Y)"
+namaowner = "K h a y B o t`"
+nomerowner = '6282123983574'
 gamewaktu = "30"
 leave = 'sayonara'
 f = ' ⑅⃝🐋'

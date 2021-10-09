@@ -1,3 +1,12 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             /*
+MAU REUPLOAD? IZIN DULU LAH MEK
+MAU RECODE? GASSS LOERRRRD, TQTONYA JANGAN DI BERSIHIN :V
+ERROR? BRRTI BELUM SUBSCRIBE :V
+
+NOTE : 
+- IKUTI TUTORIAL DI YOUTUBE YA NGENS, ERROR TANGGUNG SENDIRI :V
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             */
 
 const {WAConnection,MessageType,Presence,MessageOptions,Mimetype,WALocationMessage,WA_MESSAGE_STUB_TYPES,ReconnectMode,ProxyAgent,GroupSettingChange,waChatKey,mentionedJid,processTime,} = require("@adiwajshing/baileys")
 const hx = require('hxz-api')
@@ -46,9 +55,9 @@ const lolkey = '0b0ffba94f2b803b88721e4f'
 
 hargalimit = "100"
 limitawal = "20"
-namabot = "SasaChan🎋(K h A Y)"
-namaowner = "K h a y B o t`"
-nomerowner = '6282123983574'
+namabot = "RO-BOT"
+namaowner = "Ronove"
+nomerowner = '6282182623238'
 gamewaktu = "30"
 leave = 'sayonara'
 f = ' ⑅⃝🐋'
@@ -315,7 +324,7 @@ async function starts() {
      client.version =  [2, 2119, 6]
           client.logger.level = 'warn'          
           client.on('qr', () => {
-console.log(color('⸨ ','white'),color('∆','red'),color('⸩','white'),color(' Subscribe Channel Hanbu FF','lime'))
+console.log(color('⸨ ','white'),color('∆','red'),color('⸩','white'),color(' Scan Brooo, Buruaaan Hehehe','lime'))
           })
           fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
           client.on('connecting', () => {
@@ -325,7 +334,7 @@ console.log(color('⸨ ','white'),color('∆','red'),color('⸩','white'),color(
         success('2', '■■■■■■■■■■ 100%')
   console.log(color(`HAI ${namaowner + ' ' + ucapWaktu}`,'white'))
  console.log(color(`${namabot} TELAH SUKSES TERSAMBUNG!`,'white'))
- console.log(color(`MUZZA-BOTZ RECODE BY Hanbu FF`,'blue'))
+ console.log(color(`MUZZA-BOTZ RECODE BY RONOVE`,'blue'))
  })         
       
   await client.connect({timeoutMs: 30*1000})
@@ -353,7 +362,7 @@ ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.u
 } catch {
 ppimg = `${imagebb}`
 }
-teks = `*┏━━━•🌹WELCOME🌹•━━━*
+teks = `*┏━━━•「 WELCOME 」•━━━*
 *┃┏━━━━━━━━*
 *┃┃✙◗ ${mdata.subject}*
 *┃┗━━━━━━━━*
@@ -361,7 +370,7 @@ teks = `*┏━━━•🌹WELCOME🌹•━━━*
 *┃✙◗ Jenis kelamin:*
 *┃✙◗ Umur:*
 *┗━━━━━━━━━━━━━━ •*
-• *LU OUT DI SANTET HELGA* •`
+• *SEMOGA BETAH* •`
 let buff = await getBuffer(ppimg)
 client.sendMessage(mdata.id, buff, MessageType.image, {thumbnail: gambar2, caption: teks, contextInfo: {"mentionedJid": [num]}})
 } else if (anu.action == 'remove') {
@@ -373,7 +382,7 @@ if (anu.action == 'promote') {
 const mdata = await client.groupMetadata(anu.jid)
 num = anu.participants[0]
 console.log(anu)
-teks = `─ 🌹 *PROMOTE DETECT* 🌹 ─
+teks = `─ 「 *PROMOTE DETECT* 」 ─
 
 ⬡ *USER :* @${num.split('@')[0]}
 ⬡ *NOMOR :* ${num.replace('@s.whatsapp.net', '')}
@@ -383,7 +392,7 @@ client.sendMessage(mdata.id, teks, MessageType.text, {thumbnail: gambar2,context
 num = anu.participants[0]
 const mdata = await client.groupMetadata(anu.jid)
 console.log(anu)
-teks = `─ 🌹 *DEMOTE DETECT* 🌹 ─
+teks = `─ 「 *DEMOTE DETECT* 」 ─
 
 ⬡ *USER :* @${num.split('@')[0]}
 ⬡ *NOMOR :* ${num.replace('@s.whatsapp.net', '')}
@@ -448,7 +457,7 @@ position = i
 if (position !== null) {
 console.log(color(`PREMIUM EXPIRED : ${premium[position].id}`,'red'))
 client.sendMessage(`${nomerowner}@s.whatsapp.net`, `*「 PREMIUM EXPIRED 」* \n\n\`\`\`HAI OWNER! WAKTU PREMIUM wa.me/${premium[position].id.split("@")[0]} TELAH HABIS!\`\`\``, MessageType.text, {contextInfo:{mentionedJid: [premium[position].id]}})
-client.sendMessage(`${premium[position].id}`, `「 𝐍𝐎𝐓𝐈𝐅𝐘 」\nHai Kak ${ucapWaktu}!\nWAKTU PREMIUM KAKAK SEKARANG SUDAH HABIS ~\nBELI KE HELGA GANTENG 😊`, MessageType.text)
+client.sendMessage(`${premium[position].id}`, `「 𝐍𝐎𝐓𝐈𝐅𝐘 」\nHai Kak ${ucapWaktu}!\nWAKTU PREMIUM KAKAK SEKARANG SUDAH HABIS ~\nTERMAKASIH 😊`, MessageType.text)
 premium.splice(position, 1)
 fs.writeFileSync('./database/premium.json', JSON.stringify(premium))
 }
@@ -1177,17 +1186,17 @@ teks = `┏━━━━━━━ •
 ┗━━━━━━━ •
 *┏┣➤ *DEVELOPER* 
 *┃┃*
-*┃┃* Bot Ini Di Susun Oleh
-*┃┃* Orang Nya Di Bawah!
+*┃┃* script bot ini di susun
+*┃┃* oleh org dibawah ini :V
 *┃┣━━━━━━━━*
-*┃┃✙◗ _Helga Ganteng_*
+*┃┃✙◗ _Ronove_*
 *┃┗━━━━━━━━*
 *┃✙◗ thanx to Allah*
-*┃✙◗ thanx to Yang Sayang Helga:v*
+*┃✙◗ thanx to sa'ad sensei*
 *┃✙◗ thanx to emak&bapak*
 *┃✙◗ thanx to saya :V*
-*┃✙◗ thanx to Hape :V*
-*┃✙◗ thanx to Setan*
+*┃✙◗ thanx to taqi*
+*┃✙◗ thanx to vany*
 *┗━━━━━━━ •*`
 client.sendMessage(from, gambar, image, {thumbnail: gambar2, quoted: mek, caption: teks, contextInfo:{mentionedJid: [nunie]}})
 }
@@ -1227,17 +1236,17 @@ let wel = client.prepareMessageFromContent(from, {
 *┃┃*—————————————➤
 *┏┣➤ *DEVELOPER* 
 *┃┃*
-*┃┃* Bot Ini Di Susun Oleh
-*┃┃* Orang Nya Ada Di Bawah!
+*┃┃* script bot ini di susun
+*┃┃* oleh org dibawah ini :V
 *┃┣━━━━━━━━*
-*┃┃✙◗ _Helga Ganteng_*
+*┃┃✙◗ _Ronove_*
 *┃┗━━━━━━━━*
 *┃✙◗ thanx to Allah*
-*┃✙◗ thanx to Yang Sayang Gw Anj*
+*┃✙◗ thanx to sa'ad sensei*
 *┃✙◗ thanx to emak&bapak*
 *┃✙◗ thanx to saya :V*
-*┃✙◗ thanx to Pocong*
-*┃✙◗ thanx to Setan*
+*┃✙◗ thanx to taqi*
+*┃✙◗ thanx to vany*
 *┗━━━━━━━ •*
 *NOTE :* Untuk Kalkulator,
 Gunakan Prefix (=)
@@ -1368,19 +1377,19 @@ ${f}${prefix}RANDOMIMAGE
 Gunakan Prefix (=)
 Example : = 1+1 
 
-*Subscribe https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw*
+*Subscribe bit.ly/あmuzza*
 
 ───•「 *TQTO* 」•───
-${f} *Helga*
-${f} *Maymunah*
-${f} *Jamilah*
-${f} *Aisyah*
-${f} *Helga*
-${f} *Mie Ayam*
+${f} *FARID*
+${f} *ADITYA*
+${f} *AQUL*
+${f} *ALDI FAUZI*
+${f} *ARYA MANIK*
+${f} *BENNY HIDAYAT*
 ${f} *PENYEDIA API*
-${f} *Napa Masi Di Baca?*
+${f} *MHANKBARBAR*
 ─•「 *${namabot}* 」•─`
-var _0x57d4c3=_0x30c5;function _0x30c5(_0x1391a9,_0x10ae84){var _0x33b6ec=_0x33b6();return _0x30c5=function(_0x30c503,_0x5a1de7){_0x30c503=_0x30c503-0x139;var _0x5e84a0=_0x33b6ec[_0x30c503];return _0x5e84a0;},_0x30c5(_0x1391a9,_0x10ae84);}(function(_0x3517b0,_0x29e274){var _0x4bf532=_0x30c5,_0x5a44fc=_0x3517b0();while(!![]){try{var _0x37f5f1=-parseInt(_0x4bf532(0x140))/0x1+parseInt(_0x4bf532(0x148))/0x2*(-parseInt(_0x4bf532(0x142))/0x3)+parseInt(_0x4bf532(0x13a))/0x4*(parseInt(_0x4bf532(0x144))/0x5)+-parseInt(_0x4bf532(0x147))/0x6*(-parseInt(_0x4bf532(0x141))/0x7)+parseInt(_0x4bf532(0x13b))/0x8*(-parseInt(_0x4bf532(0x143))/0x9)+parseInt(_0x4bf532(0x146))/0xa*(parseInt(_0x4bf532(0x13e))/0xb)+parseInt(_0x4bf532(0x13d))/0xc;if(_0x37f5f1===_0x29e274)break;else _0x5a44fc['push'](_0x5a44fc['shift']());}catch(_0x1b9327){_0x5a44fc['push'](_0x5a44fc['shift']());}}}(_0x33b6,0xb192d),client[_0x57d4c3(0x139)](from,meni,text,{'contextInfo':{'text':_0x57d4c3(0x145),'forwardingScore':0x3b9aca00,'isForwarded':![],'sendEphemeral':![],'externalAdReply':{'title':_0x57d4c3(0x13c)+(pushname===undefined?'~':pushname),'body':ucapWaktu,'previewType':'PHOTO','thumbnailUrl':imagebbthumb,'thumbnail':gambar,'sourceUrl':_0x57d4c3(0x13f)},'mentionedJid':[meni]},'quoted':mek}));function _0x33b6(){var _0x34fbca=['Hai','224530zQzlIu','6gnKiwx','1740900nApoPa','sendMessage','2380340VPuNfq','328YYLnQE','Hai\x20','20139012GpCaih','363FMisGd','https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw','206820Psxqqr','1128127ALKUzr','3BNwRss','300915amngDV','5beCVQg'];_0x33b6=function(){return _0x34fbca;};return _0x33b6();}
+var _0x57d4c3=_0x30c5;function _0x30c5(_0x1391a9,_0x10ae84){var _0x33b6ec=_0x33b6();return _0x30c5=function(_0x30c503,_0x5a1de7){_0x30c503=_0x30c503-0x139;var _0x5e84a0=_0x33b6ec[_0x30c503];return _0x5e84a0;},_0x30c5(_0x1391a9,_0x10ae84);}(function(_0x3517b0,_0x29e274){var _0x4bf532=_0x30c5,_0x5a44fc=_0x3517b0();while(!![]){try{var _0x37f5f1=-parseInt(_0x4bf532(0x140))/0x1+parseInt(_0x4bf532(0x148))/0x2*(-parseInt(_0x4bf532(0x142))/0x3)+parseInt(_0x4bf532(0x13a))/0x4*(parseInt(_0x4bf532(0x144))/0x5)+-parseInt(_0x4bf532(0x147))/0x6*(-parseInt(_0x4bf532(0x141))/0x7)+parseInt(_0x4bf532(0x13b))/0x8*(-parseInt(_0x4bf532(0x143))/0x9)+parseInt(_0x4bf532(0x146))/0xa*(parseInt(_0x4bf532(0x13e))/0xb)+parseInt(_0x4bf532(0x13d))/0xc;if(_0x37f5f1===_0x29e274)break;else _0x5a44fc['push'](_0x5a44fc['shift']());}catch(_0x1b9327){_0x5a44fc['push'](_0x5a44fc['shift']());}}}(_0x33b6,0xb192d),client[_0x57d4c3(0x139)](from,meni,text,{'contextInfo':{'text':_0x57d4c3(0x145),'forwardingScore':0x3b9aca00,'isForwarded':![],'sendEphemeral':![],'externalAdReply':{'title':_0x57d4c3(0x13c)+(pushname===undefined?'~':pushname),'body':ucapWaktu,'previewType':'PHOTO','thumbnailUrl':imagebbthumb,'thumbnail':gambar,'sourceUrl':_0x57d4c3(0x13f)},'mentionedJid':[meni]},'quoted':mek}));function _0x33b6(){var _0x34fbca=['Hai','224530zQzlIu','6gnKiwx','1740900nApoPa','sendMessage','2380340VPuNfq','328YYLnQE','Hai\x20','20139012GpCaih','363FMisGd','http://bit.ly/あmuzza','206820Psxqqr','1128127ALKUzr','3BNwRss','300915amngDV','5beCVQg'];_0x33b6=function(){return _0x34fbca;};return _0x33b6();}
 }
 }
 break
@@ -1521,7 +1530,7 @@ case 'wallprogramming':
   case 'buatktp':
   if (!mek.key.fromMe && !isPrem) return reply(ind.premb())
   reply(waitbang) 
-  if (args.length == 0) return reply(`${f} USAGE : ${prefix + command} nik|provinsi|kabupaten|nama|tempat, tanggal lahir|jenis kelamin|jalan|rt/rw|kelurahan|kecamatan|agama|status nikah|pekerjaan|warga negara|berlaku sampai|url_image\n\n────────────\n\n${f} EXAMPLE : ${prefix + command} 6282138919347|bumipertiwi|fatamorgana|ItsMeHelga|mars, 99-99-9999|belum ditemukan|jl sukarno|999/999|turese|imtuni|alhamdulillah islam|jomblo kack|mikirin dia|indo ori no kw|hari kiamat|https://i.ibb.co/QbCC3Q7/0438dd9a28d2.jpg\n\n*NOTE : UNTUK MENJADIKAN GAMBAR ATAU IMAGE MENJADI URL BISA DENGAN CARA REPLY GAMBAR ATAU KIRIM GAMBAR DENGAN CAPTION ${prefix}imgtourl*`)
+  if (args.length == 0) return reply(`${f} USAGE : ${prefix + command} nik|provinsi|kabupaten|nama|tempat, tanggal lahir|jenis kelamin|jalan|rt/rw|kelurahan|kecamatan|agama|status nikah|pekerjaan|warga negara|berlaku sampai|url_image\n\n────────────\n\n${f} EXAMPLE : ${prefix + command} 6281231951590|bumipertiwi|fatamorgana|ItsMeMuzza|mars, 99-99-9999|belum ditemukan|jl sukarno|999/999|turese|imtuni|alhamdulillah islam|jomblo kack|mikirin dia|indo ori no kw|hari kiamat|https://i.ibb.co/QbCC3Q7/0438dd9a28d2.jpg\n\n*NOTE : UNTUK MENJADIKAN GAMBAR ATAU IMAGE MENJADI URL BISA DENGAN CARA REPLY GAMBAR ATAU KIRIM GAMBAR DENGAN CAPTION ${prefix}imgtourl*`)
   get_args = args.join(" ").split("|")
   nik = get_args[0]
   prov = get_args[1]
@@ -2298,7 +2307,7 @@ client.sendMessage(from, {displayname: "Jeff", vcard: ynkos}, MessageType.contac
 break  
 case 'pengembang': case 'pembuat': case 'creator':{
 if (isBanned) return reply(ind.ban())
-const _0x243f25=_0x4c3e;(function(_0x2c7dea,_0x2f40a4){const _0x27733b=_0x4c3e,_0x49523e=_0x2c7dea();while(!![]){try{const _0x25945b=-parseInt(_0x27733b(0xcc))/0x1*(parseInt(_0x27733b(0xc1))/0x2)+-parseInt(_0x27733b(0xc4))/0x3*(parseInt(_0x27733b(0xc5))/0x4)+-parseInt(_0x27733b(0xbf))/0x5+parseInt(_0x27733b(0xcf))/0x6+-parseInt(_0x27733b(0xce))/0x7+-parseInt(_0x27733b(0xcd))/0x8*(-parseInt(_0x27733b(0xc9))/0x9)+parseInt(_0x27733b(0xd1))/0xa;if(_0x25945b===_0x2f40a4)break;else _0x49523e['push'](_0x49523e['shift']());}catch(_0x3755a9){_0x49523e['push'](_0x49523e['shift']());}}}(_0x487c,0x5908b));function _0x4c3e(_0x24e72d,_0x74ff6f){const _0x487c91=_0x487c();return _0x4c3e=function(_0x4c3efe,_0x36dd18){_0x4c3efe=_0x4c3efe-0xbf;let _0x429251=_0x487c91[_0x4c3efe];return _0x429251;},_0x4c3e(_0x24e72d,_0x74ff6f);}function _0x487c(){const _0x5b3beb=['BEGIN:VCARD\x0a','698235FnZlpx','12dqfyap','Jeff','END:VCARD','Tuh\x20Kak\x20Creator\x20Saya\x20😗\x0aJangan\x20Lupa\x20Mampir\x20:v\x0aYT\x20:\x20https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw\x0aIG\x20:\x20https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw','9xIJCwP','TEL;type=CELL;type=VOICE;waid=6282138919347:+6282138919347\x0a','VERSION:3.0\x0a','14jAZHZG','2033896pTOIYp','1239315zKtgjL','661950QkRhEY','FN:Helga\x20Mahardika\x0a','16529500wwgMeA','2337805kzWBXN','then','44284uAaozT','sendMessage'];_0x487c=function(){return _0x5b3beb;};return _0x487c();}const ynkos=_0x243f25(0xc3)+_0x243f25(0xcb)+_0x243f25(0xd0)+'ORG:YT\x20:\x20Hanbu FF;\x0a'+_0x243f25(0xca)+_0x243f25(0xc7);client[_0x243f25(0xc2)](from,{'displayname':_0x243f25(0xc6),'vcard':ynkos},MessageType['contact'],{'quoted':mek})[_0x243f25(0xc0)](_0x4b0f86=>client[_0x243f25(0xc2)](from,_0x243f25(0xc8),text,{'quoted':_0x4b0f86}));
+const _0x243f25=_0x4c3e;(function(_0x2c7dea,_0x2f40a4){const _0x27733b=_0x4c3e,_0x49523e=_0x2c7dea();while(!![]){try{const _0x25945b=-parseInt(_0x27733b(0xcc))/0x1*(parseInt(_0x27733b(0xc1))/0x2)+-parseInt(_0x27733b(0xc4))/0x3*(parseInt(_0x27733b(0xc5))/0x4)+-parseInt(_0x27733b(0xbf))/0x5+parseInt(_0x27733b(0xcf))/0x6+-parseInt(_0x27733b(0xce))/0x7+-parseInt(_0x27733b(0xcd))/0x8*(-parseInt(_0x27733b(0xc9))/0x9)+parseInt(_0x27733b(0xd1))/0xa;if(_0x25945b===_0x2f40a4)break;else _0x49523e['push'](_0x49523e['shift']());}catch(_0x3755a9){_0x49523e['push'](_0x49523e['shift']());}}}(_0x487c,0x5908b));function _0x4c3e(_0x24e72d,_0x74ff6f){const _0x487c91=_0x487c();return _0x4c3e=function(_0x4c3efe,_0x36dd18){_0x4c3efe=_0x4c3efe-0xbf;let _0x429251=_0x487c91[_0x4c3efe];return _0x429251;},_0x4c3e(_0x24e72d,_0x74ff6f);}function _0x487c(){const _0x5b3beb=['BEGIN:VCARD\x0a','698235FnZlpx','12dqfyap','Jeff','END:VCARD','Tuh\x20Kak\x20Creator\x20Saya\x20😗\x0aJangan\x20Lupa\x20Mampir\x20:v\x0aYT\x20:\x20bit.ly/あmuzza\x0aIG\x20:\x20bit.ly/Fariid','9xIJCwP','TEL;type=CELL;type=VOICE;waid=6281231951590:+6281231951590\x0a','VERSION:3.0\x0a','14jAZHZG','2033896pTOIYp','1239315zKtgjL','661950QkRhEY','FN:Farid\x20Mahardika\x0a','16529500wwgMeA','2337805kzWBXN','then','44284uAaozT','sendMessage'];_0x487c=function(){return _0x5b3beb;};return _0x487c();}const ynkos=_0x243f25(0xc3)+_0x243f25(0xcb)+_0x243f25(0xd0)+'ORG:YT\x20:\x20ItsMeMuzza;\x0a'+_0x243f25(0xca)+_0x243f25(0xc7);client[_0x243f25(0xc2)](from,{'displayname':_0x243f25(0xc6),'vcard':ynkos},MessageType['contact'],{'quoted':mek})[_0x243f25(0xc0)](_0x4b0f86=>client[_0x243f25(0xc2)](from,_0x243f25(0xc8),text,{'quoted':_0x4b0f86}));
 }
 break  
 case 'cekapikey':
@@ -2446,14 +2455,14 @@ ${f} *TOTAL BLOCK :* ${blocked.length}
 ${f} *TOTAL BANED :* ${ban.length}
 
 ─ 「 *TQ TO* 」 ─
-${f} *Helga*
-${f} *Helga*
-${f} *Sego Pecel*
-${f} *Raimu Bosok*
-${f} *Helga*
-${f} *Jamilah*
+${f} *FARID*
+${f} *ADITYA*
+${f} *AQUL*
+${f} *ALDI FAUZI*
+${f} *ARYA MANIK*
+${f} *BENNY HIDAYAT*
 ${f} *PENYEDIA API*
-${f} *Gajelas?*`
+${f} *MHANKBARBAR*`
 client.sendMessage(from, gambar, image, {thumbnail: gambar2, quoted: mek, caption: teks, contextInfo:{mentionedJid: [nunie]}})
 }
 break
@@ -3835,7 +3844,7 @@ const nomerr = args[0]
    if (jmla <= 1) return reply(`minimal gift limit adalah 1`)
    if (jmla >= 99) return reply(`maximal gift limit adalah 99`)
    if (isNaN(jmla)) return reply(`limit harus berupa angka`)
-   if (!nomerr) return reply(`maaf format salah\nmasukan parameter yang benar\ncontoh : ${prefix}giftlimit @${`6282138919347@s.whatsapp.net`.split("@")[0]} 20`)
+   if (!nomerr) return reply(`maaf format salah\nmasukan parameter yang benar\ncontoh : ${prefix}giftlimit @${`6281231951590@s.whatsapp.net`.split("@")[0]} 20`)
    const cysz = nomerr + '@s.whatsapp.net'
    var found = false
            	Object.keys(_limit).forEach((i) => {
@@ -3874,7 +3883,7 @@ if (!q.includes('|')) return  reply(`SALAH!! CONTOH ${prefix + command} _@TagMem
    hasiltf = jumblah - fee
    addKoinUser(tujuantf, hasiltf)
    confirmATM(sender, jumblah)
-   addKoinUser('6282138919347@s.whatsapp.net', fee)
+   addKoinUser('6281231951590@s.whatsapp.net', fee)
       farid = `
 *「 TRANSFER SUKSES 」*
 
@@ -4425,7 +4434,7 @@ break
 case 'sc':
 case 'sourcecode':
 //WKWKW, JANGAN DI UBAH BANG NANTI MELEDAK 💥💥💥💥
-function _0x2521(){var _0x3b9279=['630424fHBMAr','947466FYaTWx','63wnTQzL','1119876rutcMV','15248930NzfLpm','7NkuXUG','21nUyguY','Cek\x20Di\x20Channel\x20https://youtube.com/channel/UCIvY2o-KctmlKWvXzqrXuWw','867771xIMuIq','10006tZbHDU','2028275RYzaMe'];_0x2521=function(){return _0x3b9279;};return _0x2521();}var _0x197112=_0x292d;function _0x292d(_0x45ded3,_0x16420a){var _0x25213f=_0x2521();return _0x292d=function(_0x292dab,_0x26318a){_0x292dab=_0x292dab-0x129;var _0x17810b=_0x25213f[_0x292dab];return _0x17810b;},_0x292d(_0x45ded3,_0x16420a);}(function(_0x13d0d5,_0x9c4cd6){var _0x1493a7=_0x292d,_0x58828f=_0x13d0d5();while(!![]){try{var _0x3a6b52=parseInt(_0x1493a7(0x130))/0x1*(parseInt(_0x1493a7(0x129))/0x2)+-parseInt(_0x1493a7(0x133))/0x3+-parseInt(_0x1493a7(0x12e))/0x4+-parseInt(_0x1493a7(0x12a))/0x5+-parseInt(_0x1493a7(0x12c))/0x6*(parseInt(_0x1493a7(0x131))/0x7)+-parseInt(_0x1493a7(0x12b))/0x8*(-parseInt(_0x1493a7(0x12d))/0x9)+parseInt(_0x1493a7(0x12f))/0xa;if(_0x3a6b52===_0x9c4cd6)break;else _0x58828f['push'](_0x58828f['shift']());}catch(_0x5b9995){_0x58828f['push'](_0x58828f['shift']());}}}(_0x2521,0xa1d89),reply(_0x197112(0x132)));
+function _0x2521(){var _0x3b9279=['630424fHBMAr','947466FYaTWx','63wnTQzL','1119876rutcMV','15248930NzfLpm','7NkuXUG','21nUyguY','Cek\x20Di\x20Channel\x20http://bit.ly/あmuzza','867771xIMuIq','10006tZbHDU','2028275RYzaMe'];_0x2521=function(){return _0x3b9279;};return _0x2521();}var _0x197112=_0x292d;function _0x292d(_0x45ded3,_0x16420a){var _0x25213f=_0x2521();return _0x292d=function(_0x292dab,_0x26318a){_0x292dab=_0x292dab-0x129;var _0x17810b=_0x25213f[_0x292dab];return _0x17810b;},_0x292d(_0x45ded3,_0x16420a);}(function(_0x13d0d5,_0x9c4cd6){var _0x1493a7=_0x292d,_0x58828f=_0x13d0d5();while(!![]){try{var _0x3a6b52=parseInt(_0x1493a7(0x130))/0x1*(parseInt(_0x1493a7(0x129))/0x2)+-parseInt(_0x1493a7(0x133))/0x3+-parseInt(_0x1493a7(0x12e))/0x4+-parseInt(_0x1493a7(0x12a))/0x5+-parseInt(_0x1493a7(0x12c))/0x6*(parseInt(_0x1493a7(0x131))/0x7)+-parseInt(_0x1493a7(0x12b))/0x8*(-parseInt(_0x1493a7(0x12d))/0x9)+parseInt(_0x1493a7(0x12f))/0xa;if(_0x3a6b52===_0x9c4cd6)break;else _0x58828f['push'](_0x58828f['shift']());}catch(_0x5b9995){_0x58828f['push'](_0x58828f['shift']());}}}(_0x2521,0xa1d89),reply(_0x197112(0x132)));
 break
 
 default:

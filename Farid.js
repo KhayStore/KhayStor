@@ -55,9 +55,9 @@ const lolkey = '0b0ffba94f2b803b88721e4f'
 
 hargalimit = "100"
 limitawal = "20"
-namabot = "RO-BOT"
-namaowner = "Ronove"
-nomerowner = '6282182623238'
+namabot = "RO-K"
+namaowner = "K"
+nomerowner = '6282123983574'
 gamewaktu = "30"
 leave = 'sayonara'
 f = ' ⑅⃝🐋'
